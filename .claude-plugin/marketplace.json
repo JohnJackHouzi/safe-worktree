@@ -1,0 +1,18 @@
+{
+  "$schema": "https://anthropic.com/claude-code/marketplace.schema.json",
+  "name": "safe-worktree",
+  "owner": { "name": "John Houzi", "url": "https://github.com/JohnJackHouzi" },
+  "metadata": {
+    "description": "Parallel agent sessions on one repository, without lost work.",
+    "version": "1.0.0"
+  },
+  "plugins": [
+    {
+      "name": "safe-worktree",
+      "source": "./",
+      "description": "Run several agents on one repository without stealing each other's work. Isolated runnable worktrees, a pre-commit drift guard, and cleanup that detects a squash merge.",
+      "category": "productivity",
+      "keywords": ["git", "worktree", "parallel", "agents", "safety"]
+    }
+  ]
+}
