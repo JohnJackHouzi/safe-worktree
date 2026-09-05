@@ -11,7 +11,23 @@ squash merge when it sees one.
 /plugin install safe-worktree@safe-worktree
 ```
 
-> Type these in Claude Code, not in your shell.
+> Type these in Claude Code (the interface you get by running `claude`), not in
+> your shell. From a plain shell, the same thing is:
+>
+> ```
+> claude plugin marketplace add JohnJackHouzi/safe-worktree
+> claude plugin install safe-worktree@safe-worktree
+> ```
+
+**What you get.** The `safe-worktree` skill, which fires when parallel work starts
+or a commit is coming, and a `/worktree` command to drive it directly.
+
+**Requirements.** `git` and a POSIX shell. Nothing else - no Python, no Node.
+Copy-on-write cloning of `node_modules` uses APFS on macOS and reflinks on
+btrfs/xfs; elsewhere it falls back to a plain copy with a warning.
+
+**Without Claude Code.** The three scripts are standalone:
+`git clone https://github.com/JohnJackHouzi/safe-worktree && safe-worktree/skills/safe-worktree/scripts/worktree_new.sh feature/x`
 
 ---
 
