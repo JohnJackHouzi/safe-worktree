@@ -202,6 +202,8 @@ Installation dans Claude Code, pas dans le terminal :
 One repo per skill, so you install only what you want:
 [prove-it](https://github.com/JohnJackHouzi/prove-it) - capture real evidence
 before an agent claims success.
+[typo-fr](https://github.com/JohnJackHouzi/typo-fr) - French typography
+that survives an AI, with a linter that never touches your code.
 
 ---
 
